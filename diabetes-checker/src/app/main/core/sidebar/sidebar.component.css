@@ -1,0 +1,21 @@
+.sidenav-list-item{
+    padding: 1em;
+   
+}
+
+
+
+.sidenav-link{
+    color: black;
+    text-decoration: none;
+    margin-left: 1em;
+    font-size: 1rem;
+}
+
+.disabled-button {
+    /* background-color: #212121; Dark gray for disabled state */
+    color: white;
+    cursor: not-allowed; /* Indicate not clickable */
+    opacity: 0.6; /* Reduce opacity for disabled look */
+    
+  }

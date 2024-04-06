@@ -1,0 +1,64 @@
+<div class="container">
+    <mat-card class="mt-5 mx-4">
+        <mat-card-header>
+            <mat-card-title>
+                Terms of Service
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="p-4">
+            <div class="d-flex">
+                <div class="content-container">
+                    Before using the checkup, please read the Terms of Service and remember:
+                    <ul class="font-3">
+                        <li><strong class="me-1">Informational and Suggestive in Nature: </strong>The Application is
+                            intended to provide information and suggestions for potential treatment
+                            options
+                            related to diabetes and other health conditions.</li>
+                        <li><strong class="me-1">User Responsibility: </strong>You are solely responsible for any
+                            decisions you make regarding your health based on the
+                            information
+                            provided by the Application.</li>
+                        <li><strong class="me-1">Not a Substitute for Medical Advice: </strong>The Application is not a
+                            substitute for professional medical advice, diagnosis, or
+                            treatment.
+                            You
+                            should
+                            always consult with a qualified healthcare professional before making any decisions about
+                            your
+                            health.</li>
+                        <li><strong class="me-1">Checkup isn’t for emergencies:</strong> Call your local emergency
+                            number
+                            right away when there’s a health emergency.</li>
+                        <li><strong class="me-1">Your data is safe:</strong>The information you give won’t be shared or
+                            used to identify you.</li>
+                        <div class="conditions mt-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox"  id="flexCheckDefault" (change)="valueChanged( )" [(ngModel)]="conditions[0]">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    I have read and accept the <a href="#">Terms of Service</a>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox"  id="flexCheckDefault"  (change)="valueChanged( )"  [(ngModel)]="conditions[1]">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    I agree for my health information to be used for the interview. More information in
+                                    the
+                                    <a href="#">Privacy Policy.</a>
+                                </label>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="../../../../assets/images/terms-and-conditions-icon.svg"
+                        style="width:400px; height:400px; " alt="">
+                </div>
+            </div>
+
+      
+        </mat-card-content>
+    </mat-card>
+
+
+</div>

@@ -1,0 +1,17 @@
+.family-history-table{
+    width: 80%;
+    margin: 1em auto;
+}
+
+.table-title {
+    margin-left: 6.8rem!important;
+}
+
+.mat-mdc-mini-fab{
+    background-color: black !important;
+    border: 1px solid black !important;
+}
+
+.mat-warn{
+    color: #f44336 !important;
+}

@@ -1,0 +1,18 @@
+.question{
+    font-size:1rem;
+}
+
+.text-2{
+
+    color:rgb(10 40 199) !important;
+
+}
+
+.content-container{
+    height:91%;
+}
+input:focus {
+    background-color:  #d1e3ff !important;
+    outline: none;
+    /* font-weight: bold; */
+  }

@@ -1,0 +1,114 @@
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+/* default styles */
+* {
+   list-style: none;
+   box-sizing: border-box;
+   color: black;
+}
+
+ul {
+   padding: 0;
+   margin: 0;
+}
+
+.theme-bg{
+   background-color: #d1e3ff;
+}
+
+/* global styles for angular material */
+mat-card {
+   background-color: #d1e3ff !important;
+   height:80vh !important;
+}
+
+mat-drawer {
+   background-color: #0d6efd !important;
+   color: black !important;
+   width: 18% !important;
+
+   
+}
+
+mat-drawer-content {
+   height: 100vh !important;
+}
+
+.mat-table{
+  /* background-color:#daa5200f  !important; */
+   background-color:#d7b505  !important;
+   /* border:2px solid red; */
+   height:100%;
+   width:100%;
+}
+
+.mat-elevation-z8{
+ box-shadow: none;
+}
+
+mat-radio-button{
+   margin-right: 2em;
+   
+}
+
+.mat-mdc-dialog-surface,.mdc-dialog__surface{
+   background: white !important;
+   color:white !important;
+}
+
+.mat-mdc-header-row,.mat-mdc-row{
+   /* border-bottom: 2px solid #ffc107 !important; */
+}
+
+.mat-card-header-text{
+   margin: 0  0 !important;
+ 
+}
+.mat-mini-fab.mat-primary {
+   background: #000;
+}
+
+mat-icon{
+   color: white !important;
+}
+
+.font-1{
+   font-size: 1.2rem;
+}
+
+
+.font-3{
+   font-size: 0.9rem;
+}
+
+.h-90{
+
+   height:90%;
+
+}
+.w-60{
+   width:60%;
+}
+.w-30{
+   width:30%;
+}
+
+.fill-up{
+   border: none;
+   background: #d1e3ff;
+   border-bottom: 1px solid black;
+   width:100%;
+
+}
+

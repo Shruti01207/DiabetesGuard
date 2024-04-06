@@ -1,0 +1,22 @@
+<div class="sidebar-container">
+
+    <div class="list-container mt-2">
+        <ul>
+            <!-- <li class="sidenav-list-item">
+                <a routerLink="/main/introduction" class="sidenav-link">Introduction</a>
+            </li>
+            <li class="sidenav-list-item">
+                <a href="#" class="sidenav-link disabled-button">Diabetes Status</a>
+            </li> -->
+            <ng-container *ngFor="let menu of currMenu; let i=index">
+                <li class="sidenav-list-item">
+                    <a href="#" class="sidenav-link" [ngClass]="{'disabled-button':activeGroupNum<i}">{{menu.title}}</a>
+                </li>
+            </ng-container>
+           
+         
+        </ul>
+    </div>
+
+
+</div>

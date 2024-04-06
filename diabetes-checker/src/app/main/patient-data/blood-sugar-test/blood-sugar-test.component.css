@@ -1,0 +1,11 @@
+
+input:focus {
+    background-color:  #d1e3ff !important;
+    outline: none;
+    /* font-weight: bold; */
+  }
+  .test{
+    
+        box-shadow: 5px 5px 5px black;
+      
+  }

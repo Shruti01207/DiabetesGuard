@@ -1,0 +1,45 @@
+<div class="container-fluid mt-2">
+    <div class="chatbot-container">
+        <div id="chatbot">
+            <div id="conversation" class="p-0">
+                <div class="chatbot-message scroll" #chatContainer id="chat-container">
+                    <ng-container *ngFor="let message of botService.messages; let i=index">
+
+                        <ng-container *ngIf="message.type==='text'">
+                            <p class="chatbot-text" [class.user-message.ms-auto]="message.sender==='user'">
+                                {{message.text}}</p>
+                        </ng-container>
+                        <ng-container *ngIf="message.type==='actions'">
+                            <div class="btn-container" class="d-flex">
+                                <div *ngFor='let action of message.actions; let j=index'>
+                                    <span class="button-29 me-3" (click)="selectSuggestion(i,j)">{{action.title}}</span>
+                                </div>
+                            </div>
+
+                        </ng-container>
+                    </ng-container>
+                </div>
+            </div>
+            <form id="input-form">
+                <div class="d-flex w-100 justify-content-center align-items-center">
+                    <div class="w-100 d-flex">
+                        <input id="input-field" type="text" placeholder="Type your message here"
+                            [(ngModel)]="chatService.messageRequest.Message" [ngModelOptions]="{standalone: true}"
+                            (keydown)="print( )">
+                      
+                        <div class="">
+                            <a (click)="message( )">
+                              <img src="../../../assets/icons/android-send_icon-icons.com_50500.png" alt="" class="mt-1" style="height:40px;width:40px">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <!-- 
+        <button (click)="refreshToken( )">RefreshToken</button> -->
+
+    </div>
+</div>
