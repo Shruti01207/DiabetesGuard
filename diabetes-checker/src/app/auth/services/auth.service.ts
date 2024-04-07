@@ -7,6 +7,7 @@ import { LoginResponse } from '../models/login-response';
 import { User } from '../models/user.model';
 import { environment } from 'src/environments/environment';
 import { SignupRequest } from '../models/signup-request.model';
+import { Route, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class AuthService {
 
   $user = new BehaviorSubject<User | undefined>(undefined);
   patientId:string="";
-  constructor() { }
+  constructor(private route: Router) { }
 
   private http = inject(HttpClient);
   private cookieService = inject(CookieService);
@@ -36,7 +37,8 @@ export class AuthService {
 
     this.setUser({
       email: response.email,
-      roles: response.roles
+      roles: response.roles,
+      userName:response.userName
     });
 
   }
@@ -46,7 +48,7 @@ export class AuthService {
     // be emitted to any suscriber of this observable
     localStorage.setItem('user-email', user.email);
     localStorage.setItem('user-roles', user.roles.join(','));
-
+    localStorage.setItem('username',user.userName)
   }
 
   user(): Observable<User | undefined> {
@@ -57,6 +59,7 @@ export class AuthService {
     localStorage.clear();
     this.cookieService.delete('Authorization', '/');
     this.$user.next(undefined);
+    this.route.navigateByUrl("/auth");
   }
 
 
@@ -68,11 +71,12 @@ export class AuthService {
 
     const email = localStorage.getItem("user-email");
     const roles = localStorage.getItem("user-roles");
-
+    const userName= localStorage.getItem("username")
     if (email && roles) {
       const user: User = {
         email: email,
-        roles: roles.split(',')
+        roles: roles.split(','),
+        userName: userName as string
       };
       return user;
     }

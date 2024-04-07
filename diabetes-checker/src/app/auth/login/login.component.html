@@ -49,9 +49,9 @@
                                 <button type="submit"
                                     class="btn btn-primary btn-block mt-4 w-100"
                                     (click)="onSubmit( )">Submit</button>
-                                <div class="text-center pt-4 text-muted">Don't
+                                <div class="text-center pt-4">Don't
                                     have an account? <a routerLink="/auth/signup"
-                                        id="forget" class="fw-bold">Sign up</a></div>
+                                        id="forget" class="" style="text-decoration: underline;">Sign up</a></div>
                             </form>
                         </div>
                     </div>
@@ -65,8 +65,10 @@
         <div class="w-100 h-100 border border-dark d-flex align-items-center justify-content-center">
             <div class="spinner-border" role="status">
                 <span class="sr-only">Loading...</span>
-              </div>
+             </div>
+              <div class="d-block">Please Wait.... While we are logging you!!</div>
         </div>
+       
          
     </ng-template>
 

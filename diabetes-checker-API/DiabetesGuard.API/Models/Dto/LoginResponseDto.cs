@@ -1,6 +1,4 @@
-﻿using System.IdentityModel.Tokens.Jwt;
-
-namespace DiabetesGuard.API.Models.Dto
+﻿namespace DiabetesGuard.API.Models.Dto
 {
     public class LoginResponseDto
     {
@@ -9,6 +7,8 @@ namespace DiabetesGuard.API.Models.Dto
         public string Email { get; set; }
         public string Token { get; set; }
         public string RefreshToken { get; set; }
+
+        public string UserName { get; set; }
         public List<string> Roles { get; set; }
 
     }

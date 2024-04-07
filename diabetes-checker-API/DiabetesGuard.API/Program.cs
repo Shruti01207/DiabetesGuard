@@ -1,4 +1,4 @@
-using DiabetesGuard.API.Data;
+﻿using DiabetesGuard.API.Data;
 using DiabetesGuard.API.Models.Domain;
 using DiabetesGuard.API.Repositories.Implementation;
 using DiabetesGuard.API.Repositories.Interface;
@@ -7,8 +7,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.DependencyInjection;
+using DiabetesGuard.API.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 
@@ -28,7 +31,7 @@ builder.Services.AddDbContext<DiabetesGuardDbContext>((option) =>
 });
 
 builder.Services.AddScoped<ITokenRepositry, TokenRepositry>();
-builder.Services.AddScoped<IBotService,BotService>();
+builder.Services.AddScoped<IBotService, BotService>();
 builder.Services.AddIdentityCore<User>().
 AddRoles<IdentityRole>().
 AddTokenProvider<DataProtectorTokenProvider<User>>("DiabetesGuard").
@@ -59,7 +62,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey=
+            IssuerSigningKey =
             new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
@@ -90,5 +93,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
- 
+
 app.Run();

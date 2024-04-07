@@ -1,12 +1,6 @@
 ﻿using DiabetesGuard.API.Models.Domain;
 using DiabetesGuard.API.Repositories.Interface;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Bot.Connector.DirectLine;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Net.Http;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace DiabetesGuard.API.Repositories.Implementation
 {
@@ -22,43 +16,43 @@ namespace DiabetesGuard.API.Repositories.Implementation
             this.configuration = configuration;
         }
 
-        public async Task<List<Activity>> GetBotResponseActivitiesAsync(string token,string conversationId)
+        public async Task<List<Activity>> GetBotResponseActivitiesAsync(string token, string conversationId)
         {
-                  ActivitySet response = null;
-                  List<Activity> result = new List<Activity>();
-                   using (var directLineClient = new DirectLineClient(token))
-                   {
-                     response = await directLineClient.Conversations.GetActivitiesAsync(conversationId, null);
-                      if (response == null)
-                     {
-                       directLineClient.Dispose();
-                      
-                     }
-                   }
-
-                _watermark = response?.Watermark;
-                result = response?.Activities?.Where(x =>
-                  x.Type == ActivityTypes.Message &&
-                    string.Equals(x.From.Name, configuration.GetValue<string>("Settings:BotName"), StringComparison.Ordinal)).ToList();
-
-                if (result != null && result.Any())
+            ActivitySet response = null;
+            List<Activity> result = new List<Activity>();
+            using (var directLineClient = new DirectLineClient(token))
+            {
+                response = await directLineClient.Conversations.GetActivitiesAsync(conversationId, null);
+                if (response == null)
                 {
-                    return result;
-                }
+                    directLineClient.Dispose();
 
-                return new List<Activity>();
+                }
+            }
+
+            _watermark = response?.Watermark;
+            result = response?.Activities?.Where(x =>
+              x.Type == ActivityTypes.Message &&
+                string.Equals(x.From.Name, configuration.GetValue<string>("Settings:BotName"), StringComparison.Ordinal)).ToList();
+
+            if (result != null && result.Any())
+            {
+                return result;
+            }
+
+            return new List<Activity>();
         }
 
         public async Task<Conversation> GetConversationId(string token)
         {
-           
+
             using (var directLineClient = new DirectLineClient(token))
             {
                 var conversation = await directLineClient.Conversations.StartConversationAsync();
                 return conversation;
-             
+
             }
-            
+
         }
 
         public async Task<DirectLineToken> GetTokenAsync(string url)
@@ -77,22 +71,22 @@ namespace DiabetesGuard.API.Repositories.Implementation
         {
             using (var directLineClient = new DirectLineClient(token))
             {
-                
-              
-                    // Send user message using directlineClient
-               var obj=
-                    await directLineClient.Conversations.PostActivityAsync(conversationId, new Activity()
-                      {
-                        Type = ActivityTypes.Message,
-                        From = new ChannelAccount { Id = "userId", Name = "userName" },
-                        Text = message,
-                        TextFormat = "plain",
-                        Locale = "en-Us",
-                       });
+
+
+                // Send user message using directlineClient
+                var obj =
+                     await directLineClient.Conversations.PostActivityAsync(conversationId, new Activity()
+                     {
+                         Type = ActivityTypes.Message,
+                         From = new ChannelAccount { Id = "userId", Name = "userName" },
+                         Text = message,
+                         TextFormat = "plain",
+                         Locale = "en-Us",
+                     });
 
                 return obj;
             }
-    }
+        }
 
         public async Task<DirectLineClient> RefreshToken(string currentToken)
         {
@@ -104,7 +98,7 @@ namespace DiabetesGuard.API.Repositories.Implementation
 
             return directLineClient;
             // use new directLineClient to communicate to your bot
-           
+
 
         }
     }

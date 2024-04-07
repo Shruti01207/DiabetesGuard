@@ -35,21 +35,21 @@ namespace DiabetesGuard.API.Repositories.Implementation
             var token = new JwtSecurityToken(
                 issuer: configuration["Jwt:Issuer"],
                 audience: configuration["Jwt:Audience"],
-                claims:claims,
+                claims: claims,
                 expires: DateTime.Now.AddMinutes(15),
-                signingCredentials: credentials  
+                signingCredentials: credentials
                 );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
 
         }
 
-      
-
-            // JWT Security Token Parameters
-            //Return token
 
 
-        }
+        // JWT Security Token Parameters
+        //Return token
+
+
     }
+}
 

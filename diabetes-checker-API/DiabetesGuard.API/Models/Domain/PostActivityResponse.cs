@@ -2,8 +2,8 @@
 {
     public class PostActivityResponse
     {
-        public string Id { get; set; }  
-       
+        public string Id { get; set; }
+
 
     }
 }

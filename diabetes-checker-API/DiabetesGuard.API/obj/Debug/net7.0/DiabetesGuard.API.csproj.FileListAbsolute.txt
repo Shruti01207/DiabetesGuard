@@ -91,96 +91,274 @@ F:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug
 F:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Net.dll
 F:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Bot.Connector.DirectLine.dll
 F:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Rest.ClientRuntime.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\appsettings.Development.json
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\appsettings.json
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.exe
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.deps.json
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.runtimeconfig.json
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.pdb
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Azure.Core.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Azure.Identity.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Humanizer.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Bot.Connector.DirectLine.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Identity.Client.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Rest.ClientRuntime.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Newtonsoft.Json.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.ZString.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Extensions.Newtonsoft.Json.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Extensions.System.Text.Json.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Extensions.Time.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Extensions.Xml.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Net.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.CodeDom.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.Drawing.Common.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.Memory.Data.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.Runtime.Caching.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.Security.Permissions.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\System.Windows.Extensions.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.csproj.AssemblyReference.cache
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.AssemblyInfoInputs.cache
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.AssemblyInfo.cs
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.csproj.CoreCompileInputs.cache
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets.build.json
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets.development.json
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets\msbuild.DiabetesGuard.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets\msbuild.build.DiabetesGuard.API.props
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DiabetesGuard.API.props
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DiabetesGuard.API.props
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\scopedcss\bundle\DiabetesGuard.API.styles.css
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.csproj.CopyComplete
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\refint\DiabetesGuard.API.dll
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.pdb
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.genruntimeconfig.cache
-C:\Diabetes Checker\diabetes-checker-API\DiabetesGuard.API\obj\Debug\net7.0\ref\DiabetesGuard.API.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\appsettings.Development.json
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\appsettings.json
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.exe
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.deps.json
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.runtimeconfig.json
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\DiabetesGuard.API.pdb
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Azure.Core.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Azure.Identity.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Humanizer.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Bot.Connector.DirectLine.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Rest.ClientRuntime.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.ZString.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Extensions.Newtonsoft.Json.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Extensions.System.Text.Json.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Extensions.Time.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Extensions.Xml.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\SmartFormat.Net.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.CodeDom.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.csproj.AssemblyReference.cache
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.AssemblyInfoInputs.cache
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.AssemblyInfo.cs
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.csproj.CoreCompileInputs.cache
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.MvcApplicationPartsAssemblyInfo.cs
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.MvcApplicationPartsAssemblyInfo.cache
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.sourcelink.json
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets.build.json
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets.development.json
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets\msbuild.DiabetesGuard.API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets\msbuild.build.DiabetesGuard.API.props
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DiabetesGuard.API.props
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DiabetesGuard.API.props
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\scopedcss\bundle\DiabetesGuard.API.styles.css
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.csproj.CopyComplete
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\refint\DiabetesGuard.API.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.pdb
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\DiabetesGuard.API.genruntimeconfig.cache
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\obj\Debug\net7.0\ref\DiabetesGuard.API.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Build.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.Common.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Major Project\DiabetesGuard API\DiabetesGuard.API\DiabetesGuard.API\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll

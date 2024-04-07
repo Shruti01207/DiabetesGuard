@@ -2,10 +2,10 @@
 
 namespace DiabetesGuard.API.Models.Domain
 {
-    public class User: IdentityUser
+    public class User : IdentityUser
     {
 
-        public string RefreshToken { get; set; }=string.Empty;
+        public string RefreshToken { get; set; } = string.Empty;
 
         public DateTime TokenCreated { get; set; }
 

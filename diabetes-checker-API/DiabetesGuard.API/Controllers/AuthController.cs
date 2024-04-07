@@ -3,9 +3,7 @@ using DiabetesGuard.API.Models.Dto;
 using DiabetesGuard.API.Repositories.Interface;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -24,30 +22,31 @@ namespace DiabetesGuard.API.Controllers
             ITokenRepositry tokenRepositry, IConfiguration configuration)
         {
             this.userManager = userManager;
-            this.tokenRepositry=tokenRepositry;
+            this.tokenRepositry = tokenRepositry;
             this.configuration = configuration;
         }
 
-       
+
 
         //POST: {baseApiUrl}/api/auth/login
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
-            var identityUser = await userManager.FindByEmailAsync(request.Email) ;
+            var identityUser = await userManager.FindByEmailAsync(request.Email);
 
-            if(identityUser is not null) {
+            if (identityUser is not null)
+            {
 
-                var checkPasswordResult = await userManager.CheckPasswordAsync(identityUser,request.Password);
+                var checkPasswordResult = await userManager.CheckPasswordAsync(identityUser, request.Password);
                 if (checkPasswordResult)
                 {
                     var roles = await userManager.GetRolesAsync(identityUser);
                     //Create a token and response
                     var jwtToken = tokenRepositry.CreateJwtToken(identityUser, roles.ToList());
 
-                    
-                 
+
+
 
                     var refreshToken = GenerateRefreshToken();
                     // SetRefreshToken(refreshToken,identityUser);
@@ -63,8 +62,9 @@ namespace DiabetesGuard.API.Controllers
                         Email = request.Email,
                         Roles = roles.ToList(),
                         Token = jwtToken,
-                        RefreshToken=refreshToken.Token
-
+                        RefreshToken = refreshToken.Token,
+                        UserName= identityUser.UserName,
+                        
                     };
 
                     return Ok(response);
@@ -106,8 +106,8 @@ namespace DiabetesGuard.API.Controllers
 
             var user = await userManager.FindByNameAsync(principal.Identity.Name);
 
-            if(user is null || user.RefreshToken!=model.RefreshToken || user.TokenExpires < DateTime.UtcNow)
-               return Unauthorized();
+            if (user is null || user.RefreshToken != model.RefreshToken || user.TokenExpires < DateTime.UtcNow)
+                return Unauthorized();
 
             var roles = await userManager.GetRolesAsync(user);
             var jwtToken = tokenRepositry.CreateJwtToken(user, roles.ToList());
@@ -115,8 +115,8 @@ namespace DiabetesGuard.API.Controllers
             return Ok(new LoginResponseDto
             {
                 Token = jwtToken,
-                RefreshToken= model.RefreshToken
-            }) ;
+                RefreshToken = model.RefreshToken
+            });
 
 
 
@@ -126,11 +126,11 @@ namespace DiabetesGuard.API.Controllers
         private ClaimsPrincipal? GetPrincipalFromExpiredToken(string? token)
         {
 
-            var secret= configuration["JWT:Secret"]?? throw new InvalidOperationException("Secret Not Configured");
-           
+            var secret = configuration["JWT:Secret"] ?? throw new InvalidOperationException("Secret Not Configured");
+
             var validation = new TokenValidationParameters
             {
-               
+
                 ValidIssuer = configuration["Jwt:Issuer"],
                 ValidAudience = configuration["Jwt:Audience"],
                 IssuerSigningKey =
@@ -169,8 +169,8 @@ namespace DiabetesGuard.API.Controllers
             {
                 UserName = request.Username,
                 Email = request.Email?.Trim(),
-                DateOfBirth=request.DateOfBirth,
-                Gender=request.Gender                 
+                DateOfBirth = request.DateOfBirth,
+                Gender = request.Gender
 
             };
 
@@ -196,11 +196,11 @@ namespace DiabetesGuard.API.Controllers
             }
             else
             {
-                if(identityResult.Errors.Any())
+                if (identityResult.Errors.Any())
                 {
                     foreach (var error in identityResult.Errors)
                     {
-                        ModelState.AddModelError("",error.Description);
+                        ModelState.AddModelError("", error.Description);
                     }
                 }
             }

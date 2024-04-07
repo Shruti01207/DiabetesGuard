@@ -49,10 +49,10 @@ namespace DiabetesGuard.API.Controllers
         [Route("user_message")]
         public async Task<IActionResult> SendMessage([FromBody] SendMessageRequest request)
         {
-           // var directLineToken = await botService.GetTokenAsync(configuration.GetValue<string>("Settings:BotTokenEndpoint"));
+            // var directLineToken = await botService.GetTokenAsync(configuration.GetValue<string>("Settings:BotTokenEndpoint"));
 
             var response = await botService.PostMessage(request.Message, request.Token, request.ConversationId);
-         
+
             if (response != null)
             {
                 return Ok(response);
@@ -81,7 +81,7 @@ namespace DiabetesGuard.API.Controllers
 
         public async Task<IActionResult> RefreshDirectLineToken([FromBody] string currentToken)
         {
-            var response =  await botService.RefreshToken(currentToken);
+            var response = await botService.RefreshToken(currentToken);
 
             if (response != null)
             {

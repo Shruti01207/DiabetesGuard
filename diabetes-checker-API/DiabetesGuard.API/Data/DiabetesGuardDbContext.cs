@@ -3,16 +3,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DiabetesGuard.API.Data
 {
-    public class DiabetesGuardDbContext: DbContext
+    public class DiabetesGuardDbContext : DbContext
     {
 
-        public DiabetesGuardDbContext(DbContextOptions options ) : base(options)
+        public DiabetesGuardDbContext(DbContextOptions options) : base(options)
         {
-            
+
         }
 
         public DbSet<MedicalBackground> MedicalBackgrounds { get; set; }
-
+        public DbSet<PastMedications> PastMedications { get; set; }
 
 
     }

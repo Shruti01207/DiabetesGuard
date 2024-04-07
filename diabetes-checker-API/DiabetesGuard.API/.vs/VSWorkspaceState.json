@@ -1,14 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bin",
-    "\\Controllers",
-    "\\Data",
     "\\Migrations",
+    "\\Migrations\\DiabetesGuardDb",
     "\\Models",
     "\\Models\\Domain",
     "\\Models\\Dto"
   ],
-  "SelectedNode": "\\DiabetesGuard.API.csproj.user",
   "PreviewInSolutionExplorer": false
 }

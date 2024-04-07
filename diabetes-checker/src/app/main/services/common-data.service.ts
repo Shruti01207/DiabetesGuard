@@ -27,5 +27,10 @@ export class CommonDataService {
     this.isTermsConditionAccepted.next(status);
   }
 
+  
+  public get UserName() {
+    return localStorage.getItem('username');
+  }
+  
 
 }

@@ -19,3 +19,34 @@
     opacity: 0.6; /* Reduce opacity for disabled look */
     
   }
+
+  .my-button {
+    background-color:#0d6efd  ; /* Replace with your desired primary blue color */
+    color: white;
+    padding: 0.5em 1em; /* Adjust padding as needed */
+    cursor: pointer;
+    display: inline-block; /* Makes it behave like a button */
+    border: none; /* Remove default border */
+    border-radius: 13px; /* Add rounded corners for a button look */
+    margin: 3px;
+    margin-top: 0;
+  }
+  
+  .my-button:hover {
+    background-color: #4188f3; /* Slightly darker blue on hover */
+  }
+
+ .dropup{
+    display: none;
+    border-radius: 9px;
+    padding: 1em;
+    border:1px solid transparent;
+ }
+ 
+ .dropup-btn{
+
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    
+ }

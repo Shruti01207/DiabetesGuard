@@ -17,7 +17,7 @@ namespace DiabetesGuard.API.Migrations.DiabetesGuardDb
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.13")
+                .HasAnnotation("ProductVersion", "8.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -31,12 +31,6 @@ namespace DiabetesGuard.API.Migrations.DiabetesGuardDb
                     b.Property<string>("DiabetesType")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FamilyHistory")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MedicalConditions")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<Guid>("PatientId")
                         .HasColumnType("uniqueidentifier");
 
@@ -46,6 +40,38 @@ namespace DiabetesGuard.API.Migrations.DiabetesGuardDb
                     b.HasKey("Id");
 
                     b.ToTable("MedicalBackgrounds");
+                });
+
+            modelBuilder.Entity("DiabetesGuard.API.Models.Domain.PastMedications", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("BrandName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Frequency")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("PatientId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Route")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Substances")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PastMedications");
                 });
 #pragma warning restore 612, 618
         }

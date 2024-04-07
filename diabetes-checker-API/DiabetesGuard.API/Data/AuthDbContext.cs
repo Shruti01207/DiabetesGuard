@@ -52,7 +52,7 @@ namespace DiabetesGuard.API.Data
                 NormalizedUserName = "admin@DiabetesGuard.com".ToUpper()
             };
             admin.PasswordHash = new PasswordHasher<User>().HashPassword(admin, "Admin@123");
-            
+
             builder.Entity<User>().HasData(admin);
 
             var adminRoles = new List<IdentityUserRole<string>>()

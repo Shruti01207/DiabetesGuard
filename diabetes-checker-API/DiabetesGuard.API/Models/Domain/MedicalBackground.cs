@@ -6,8 +6,7 @@
         public Guid PatientId { get; set; }
         public bool isDiabetic { get; set; }
         public string DiabetesType { get; set; }
-        public string FamilyHistory { get; set; }
-        public string MedicalConditions { get; set;}
+      
 
 
     }

@@ -1,22 +1,24 @@
-<div class="sidebar-container">
+<div class="sidebar-container d-flex flex-column align-items-between w-100 h-100">
 
-    <div class="list-container mt-2">
+    <div class="list-container mt-2 h-100 w-100">
         <ul>
-            <!-- <li class="sidenav-list-item">
-                <a routerLink="/main/introduction" class="sidenav-link">Introduction</a>
-            </li>
-            <li class="sidenav-list-item">
-                <a href="#" class="sidenav-link disabled-button">Diabetes Status</a>
-            </li> -->
             <ng-container *ngFor="let menu of currMenu; let i=index">
                 <li class="sidenav-list-item">
                     <a href="#" class="sidenav-link" [ngClass]="{'disabled-button':activeGroupNum<i}">{{menu.title}}</a>
                 </li>
             </ng-container>
-           
-         
+
+
         </ul>
     </div>
-
+    <div class="bg-light dropup">
+      <a class="dropup-btn" (click)="logOut( )">LogOut</a>
+    </div>
+    <div class="footer-container py-3 my-button" (click)="showHideDropUp( )">
+        <!-- <i class="fa-solid fa-plus me-1" style="font-size: 2rem; color: red;"></i> -->
+        <img src="../../../../assets/images/doctor-female-svgrepo-com.svg" alt="" style="height: 50px; width: 50px;;">
+        <span class="font-1 ms-3">Hi, <span class="name me-2">{{userName}}</span></span>
+    </div>
+  
 
 </div>

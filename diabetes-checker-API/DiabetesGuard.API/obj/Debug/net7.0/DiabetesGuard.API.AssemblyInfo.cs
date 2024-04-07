@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DiabetesGuard.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62dd65eb9bfc3698f94935236aad2e1e1a16f44a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DiabetesGuard.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DiabetesGuard.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
