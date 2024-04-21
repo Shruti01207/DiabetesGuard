@@ -3,6 +3,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { Subscription } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-sign-up',
@@ -19,7 +20,7 @@ export class SignUpComponent implements OnInit {
       password: ['', Validators.required],
       username: ['', Validators.required],
       gender: ['female', [Validators.required]],
-      DateOfBirth: ['', Validators.required]
+      dateOfBirth: ['', Validators.required]
 
     });
   }
@@ -40,7 +41,8 @@ export class SignUpComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
     private authService: AuthService,
-    private route: Router) {
+    private route: Router,
+    private toastrService: ToastrService) {
 
   }
 
@@ -88,18 +90,14 @@ export class SignUpComponent implements OnInit {
   }
   register() {
     if (this.signUpForm.valid) {
+      console.log("this.signUpForm.value=",this.signUpForm.value);
+      
       this.authServiceSubscription = this.authService.signUp(this.signUpForm.value).
         subscribe({
           next: (response) => {
             console.log("register response", response);
             this.authService.logOut();
-            // this.authServiceSubscription = this.authService.login(this.signUpForm.value).
-            //   subscribe({
-            //     next: (response) => {
-            //       this.authService.setAuthCookieAndUser(response);
-            //       this.route.navigateByUrl('home');
-            //     }
-            //   });
+            this.toastrService.success("Registration successful!!");
             this.route.navigateByUrl("/login");
           }
         });

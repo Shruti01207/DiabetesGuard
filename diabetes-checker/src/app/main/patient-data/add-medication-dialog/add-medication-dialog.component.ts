@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Observable, catchError, concat, concatMap, debounceTime, distinctUntilChanged, filter, forkJoin, map, of, startWith } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { MedicationService } from '../services/medication.service';
@@ -7,6 +7,8 @@ import { log } from 'console';
 import { openFda } from '../models/openfda';
 import { medicineData } from '../models/selectedmedicine';
 import { AuthService } from 'src/app/auth/services/auth.service';
+import { MatDialogRef } from '@angular/material/dialog';
+import { MatTabChangeEvent } from '@angular/material/tabs';
 @Component({
   selector: 'app-add-medication-dialog',
   templateUrl: './add-medication-dialog.component.html',
@@ -18,7 +20,8 @@ export class AddMedicationDialogComponent implements OnInit {
 
 
   constructor(private medicationService: MedicationService,
-             private authService: AuthService) { }
+    private authService: AuthService, public dialogRef: MatDialogRef<AddMedicationDialogComponent>,
+    private fb: FormBuilder) { }
 
 
   myControl = new FormControl();
@@ -26,24 +29,34 @@ export class AddMedicationDialogComponent implements OnInit {
   medByGeneric?: Observable<Array<openFda>>;
   medByIngredient?: Observable<Array<openFda>>;
   isdataLoading: boolean = false;
+  tabs: number = 2;
   data: Observable<Array<any>> = of([]);
-  // selectedMedicine: medicineData = {
-  //   brandName: [""],
-  //   substances: [],
-  //   route: "",
-  //   frequency:0,
-  //   startDate:new Date(),
-  //   endDate: new Date()
+  selectedTabIndex: number = 0;
+  presType: string = "medicine";
+  tabsName: Array<string> = ['medicine', 'insulin'];
 
-  // };
+  pastPrescForm2 = this.fb.array([])
 
 
-  pastPrescForm = new FormGroup({
+  medPrescForm = new FormGroup({
+    type: new FormControl('medicine'),
     brandNames: new FormControl(''),
     substances: new FormControl(''),
-    route: new FormControl(''),
-    frequency:new FormControl(''),
-    startDate:new FormControl(''),
+    dose: new FormControl(''),
+    insulinType: new FormControl('none'),
+    frequency: new FormControl('0'),
+    startDate: new FormControl(''),
+    endDate: new FormControl('')
+  });
+
+  insulinPrescForm = new FormGroup({
+    type: new FormControl('insulin'),
+    brandNames: new FormControl(''),
+    substances: new FormControl(''),
+    dose: new FormControl(''),
+    insulinType: new FormControl('0'),
+    frequency: new FormControl('0'),
+    startDate: new FormControl(''),
     endDate: new FormControl('')
   });
 
@@ -89,28 +102,72 @@ export class AddMedicationDialogComponent implements OnInit {
               console.log("after merge", res);
             }
           })
-
-
         }
-      })
+      });
+
+    // this.intializeFormArray();
+
+
+
+
+
   }
 
-  selectMedicine(option: any) {
+  selectMedicine(option: any, type: string) {
 
-    // this.selectedMedicine.brandNames = option.brandNames;
-    // this.selectedMedicine.substances = option.substances;
-    // this.selectedMedicine.route = option.route;
-  this.pastPrescForm.patchValue(option);
-  this.pastPrescForm.controls['brandNames'].setValue(option.brandNames);
-  }
-  addMedicine( ){
-    console.log("this.pastPrescForm.value=",this.pastPrescForm.value);
+    if (type === "medicine") {
+      this.medPrescForm.patchValue(option);
+      this.medPrescForm.controls['brandNames'].setValue(option.brandNames);
+      console.log("this.medPrescForm=", this.medPrescForm.value);
+    }
+    else {
+      this.insulinPrescForm.patchValue(option);
+      this.insulinPrescForm.controls['brandNames'].setValue(option.brandNames);
+      console.log("this.insulinPrescForm=", this.insulinPrescForm.value);
+    }
 
-     this.medicationService.addMedicine(this.pastPrescForm.value)
-     .subscribe({
-      next:(res)=>{
-        console.log("res",res);     
-      }
-     })
   }
+  addMedicine(type: string) {
+    console.log(" this.medPrescForm.value=", this.medPrescForm.value);
+
+    if (type === "medicine") {
+      console.log("this.medPrescForm.value=", this.medPrescForm.value);
+    }
+    else {
+      console.log("this.insulinPrescForm.value=", this.insulinPrescForm.value);
+    }
+
+    // this.medicationService.addMedicine(this.medPrescForm.value)
+    //   .subscribe({
+    //     next: (res) => {
+    //       console.log("res", res);
+    //       this.closeDialog();
+    //     }
+    //   })
+  }
+
+  closeDialog() {
+    this.dialogRef.close('Pizza!');
+  }
+
+
+  onTabChange(tabChangeEvent: MatTabChangeEvent) {
+
+    this.selectedTabIndex = tabChangeEvent.index;
+
+    // Update form control value based on selected tab index
+    if (this.selectedTabIndex === 0) {
+      this.presType = "medicine";
+    } else {
+      this.presType = "insulin";
+    }
+
+    console.log("this.presType=", this.presType);
+
+  }
+
+
+
+
+
 }

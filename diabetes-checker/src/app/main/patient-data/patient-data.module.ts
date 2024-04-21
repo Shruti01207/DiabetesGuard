@@ -10,6 +10,7 @@ import { BloodSugarTestComponent } from './blood-sugar-test/blood-sugar-test.com
 import { DiabetesComplicationsComponent } from './diabetes-complications/diabetes-complications.component';
 import { PastMedicationsComponent } from './past-medications/past-medications.component';
 import { HeathMaintainanceComponent } from './heath-maintainance/heath-maintainance.component';
+import { WordTranformPipe } from './pipes/word-tranform.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HeathMaintainanceComponent } from './heath-maintainance/heath-maintaina
     BloodSugarTestComponent,
     DiabetesComplicationsComponent,
     PastMedicationsComponent,
-    HeathMaintainanceComponent
+    HeathMaintainanceComponent,
+    WordTranformPipe
   ],
   imports: [
     CommonModule,

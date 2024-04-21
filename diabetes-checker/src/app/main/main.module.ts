@@ -12,11 +12,13 @@ import { TreatmentHistoryModule } from './treatment-history/treatment-history.mo
 import { ChatModule } from './chat/chat.module';
 import { ChatSessionModule } from '../chat-session/chat-session.module';
 import { PatientDataModule } from './patient-data/patient-data.module';
+import { ResultsModule } from './results/results.module';
 
 @NgModule({
   declarations: [
     MainComponent,
-    SidebarComponent
+    SidebarComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -25,6 +27,7 @@ import { PatientDataModule } from './patient-data/patient-data.module';
     MedicalBackgroundModule,
     TreatmentHistoryModule,
     PatientDataModule,
+    ResultsModule,
     ChatModule,
     ChatSessionModule,
     RouterModule,

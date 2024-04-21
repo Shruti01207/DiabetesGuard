@@ -6,27 +6,31 @@
             </mat-card-title>
         </mat-card-header>
         <mat-card-content class="h-90 w-100">
-            <div class="content-container h-100 w-100">
-               
-                    <small>Please enter the results of your recent tests.</small>
-                   
-                        <div class="tests-container row">
-                           <div class="test col-5 p-3 mt-4 m-2 border border-dark d-flex">
-                              <label for="" class="font-1 me-4">Fasting Blood Sugar Test</label>
-                              <input type="text" name="" id="" class="w-50 fill-up">
-                              <span class="font-1">mg/dL</span>
-                           </div>
-                           <div class="test col-5 p-3 mt-4 m-2 border border-dark d-flex">
-                              <label for="" class="font-1 me-4">Hb1Ac Test</label>
-                              <input type="text" name="" id="" class="w-50 fill-up">
-                              <span class="font-1">mg/dL</span>
-                           </div>
-                        </div>
+            <small>Please enter the results of your recent tests.</small>
+            <div class="content-container h-100 w-100 d-flex">
 
                 
-                <!-- <div class="right-content">
-                    <img src="../../../../assets/images/glucometer.jpg" alt="" style="height: 200px; width:200px">
-                </div> -->
+
+                <div class="tests-container w-50">
+                    <form [formGroup]="bloodTestForm">
+                        <div class="test col-5 p-3 py-4 question-container w-75 m-2 mt-4 border border-dark d-flex">
+                            <label for="" class="font-1 form-label me-4 question">Fasting Test</label>
+                            <input type="text" formControlName="fastingTest" id="" class="w-50 fill-up" min="65" max="135">
+                            <span class="font-1 question ms-1">mg/dL</span>
+                        </div>
+                        <div class="test col-5 p-3 py-4 w-75 m-2 question-container mt-5 border border-dark d-flex">
+                            <label for="" class="font-1 me-4 form-label question">Hb1Ac Test</label>
+                            <input type="text" formControlName="hb1Ac"  id="" class="w-50 fill-up" min="4" max="10">
+                            <span class="font-1 question ms-1">mg/dL</span>
+                        </div>
+                    </form>          
+                </div>
+
+
+
+                <div class="right-content w-50 ">
+                    <img src="../../../../assets/images/glucometer.jpg" alt="" >
+                </div>
             </div>
 
 

@@ -5,3 +5,8 @@
 .question-container{
     margin-bottom: 1.5em;
 }
+
+.cartoon-image{
+    height:300px !important; 
+    width:400px !important
+}

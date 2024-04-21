@@ -4,11 +4,9 @@
         <ul>
             <ng-container *ngFor="let menu of currMenu; let i=index">
                 <li class="sidenav-list-item">
-                    <a href="#" class="sidenav-link" [ngClass]="{'disabled-button':activeGroupNum<i}">{{menu.title}}</a>
+                    <a routerLink="{{menu.route}}" class="sidenav-link" [ngClass]="{'disabled-button':activeGroupNum<i}">{{menu.title}}</a>
                 </li>
             </ng-container>
-
-
         </ul>
     </div>
     <div class="bg-light dropup">
@@ -16,7 +14,7 @@
     </div>
     <div class="footer-container py-3 my-button" (click)="showHideDropUp( )">
         <!-- <i class="fa-solid fa-plus me-1" style="font-size: 2rem; color: red;"></i> -->
-        <img src="../../../../assets/images/doctor-female-svgrepo-com.svg" alt="" style="height: 50px; width: 50px;;">
+        <img src="../../../../assets/images/bottom-icon.png" alt="" style="height: 50px; width: 50px;;">
         <span class="font-1 ms-3">Hi, <span class="name me-2">{{userName}}</span></span>
     </div>
   

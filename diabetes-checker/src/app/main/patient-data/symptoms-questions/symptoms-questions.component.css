@@ -12,3 +12,11 @@
 .content-container{
     height:91%;
 }
+
+.questions-container{
+    overflow-y: scroll;
+}
+
+.error{
+    display:none;
+}

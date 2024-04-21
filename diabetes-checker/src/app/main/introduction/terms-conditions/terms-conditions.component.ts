@@ -15,25 +15,45 @@ export class TermsConditionsComponent implements OnInit {
   ) { }
 
   conditions: Array<boolean> = [false, false];
+  id: number = 2;
   ngOnInit(): void {
+  
+
+   const conditionsStrings = sessionStorage.getItem("terms-condition");
+   
+   if(conditionsStrings)
+   this.conditions=conditionsStrings.split(",").map(val => val.toLowerCase() === "true"); 
+  
+    this.commonData.getValidationEvent((this.id - 1)).subscribe({
+      next: (res) => {
+        console.log("t&c called", (this.id - 1), res);
+        this.Save();
+      }
+    })
 
   }
 
 
 
-  msg() {
-    this.toastr.info("hello!");
-  }
 
   valueChanged() {
-     console.log(this.conditions[0],this.conditions[1]);
-     
+    console.log(this.conditions[0], this.conditions[1]);
+
     if (this.conditions[0] && this.conditions[1]) {
       this.commonData.setTermsConditionAccepted(true);
     }
     else {
       this.commonData.setTermsConditionAccepted(false);
     }
+  }
+
+
+  Save() {
+    if (this.conditions[0] && this.conditions[1]) {
+      this.commonData.formValid = true;
+      sessionStorage.setItem("terms-condition", this.conditions.toString());
+    }
+
   }
 
 

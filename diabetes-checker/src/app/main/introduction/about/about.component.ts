@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { inject } from '@angular/core/testing';
+import { CommonDataService } from '../../services/common-data.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -8,16 +9,11 @@ import { inject } from '@angular/core/testing';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private commonService: CommonDataService) { }
 
   ngOnInit(): void {
 
-    this.http.get(' https://rxnav.nlm.nih.gov/REST/Prescribe/drugs.json?name=cymbalta')
-      .subscribe({
-        next: (res) => {
-          console.log("res", res);
-        }
-      })
+    this.commonService.formValid=true;
   }
 
 }

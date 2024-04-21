@@ -7,39 +7,47 @@
             </mat-card-title>
         </mat-card-header>
         <mat-card-content class="mt-4">
-            <ng-container *ngIf="!loader">
-                <form [formGroup]="diabetesStatus">
-                    <div class="question-container">
-                        <label for="isdiabetic" class="question">Are you suffering from diabetes?</label>
-                        <div class="radio-btns">
-                            <mat-radio-group id="isdiabetic" formControlName="isDiabetic" (change)="changeDiaStatus( )">
-                                <mat-radio-button value="yes">Yes</mat-radio-button>
-                                <mat-radio-button value="no">No</mat-radio-button>
-                                <mat-radio-button value="not-sure">Not Sure</mat-radio-button>
-                            </mat-radio-group>
+            <ng-container *ngIf="!loader" class="">
+                <div class="content-container d-flex">
+                    <form [formGroup]="diabetesStatus" (ngSubmit)="Save( )" class="w-50 h-100">
+                        <div class="">
+                            <label for="isdiabetic" class="">Are you suffering from diabetes?</label>
+                            <div class="radio-btns">
+                                <mat-radio-group id="isdiabetic" formControlName="isDiabetic" (change)="changeDiaStatus( )">
+                                    <mat-radio-button value="yes">Yes</mat-radio-button>
+                                    <mat-radio-button value="no">No</mat-radio-button>
+                                    <mat-radio-button value="not-sure">Not Sure</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question-container mt-2">
-                        <label for="type" class="question">What is the type of diabetes you are suffering from?</label>
-                        <div class="radio-btns">
-                            <mat-radio-group id="type" formControlName="diabetesType">
-                                <mat-radio-button value="Type-1">Type-1</mat-radio-button>
-                                <mat-radio-button value="Type-2">Type-2</mat-radio-button>
-                                <mat-radio-button value="Gestational">Gestational Diabetes</mat-radio-button>
-                                <mat-radio-button value="not-sure">Not Sure</mat-radio-button>
-                            </mat-radio-group>
+                        <div class="mt-4">
+                            <label for="type" class="">What is the type of diabetes you are suffering from?</label>
+                            <div class="radio-btns">
+                                <mat-radio-group id="type" formControlName="diabetesType">
+                                    <mat-radio-button value="Type-1">Type-1</mat-radio-button>
+                                    <mat-radio-button value="Type-2">Type-2</mat-radio-button>
+                                    <mat-radio-button value="Gestational">Gestational Diabetes</mat-radio-button>
+                                    <mat-radio-button value="not-sure">Not Sure</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
                         </div>
+                        <div class="mt-4">
+                            <label for="type" class="form-label">What is your weight (in kgs)? </label>
+                             <input type="number" class="form-control w-75" placeholder="Enter weight (in kgs)" formControlName="weight" min="2" max="200">
+                        </div>
+                        <div class="mt-4">
+                            <label for="type" class="form-label">What is your height (in meters)? </label>
+                             <input type="number" class="form-control w-75" placeholder="Enter height (in meters)" formControlName="height">
+                        </div>
+    
+                    </form>
+                    <div class="image-container w-50 h-100">
+                        <img src="../../../../assets/images/doctor-pills.svg" alt="" class="w-100 h-100 cartoon-image img-thumbnail" style="">
                     </div>
-
-                    <!-- <button type="submit" class="btn btn-success mt-3 ms-1" (click)="Save( )">Save</button> -->
-
-                </form>
-            </ng-container>
-            <!-- <ng-template #loaderspin>
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading...</span>
                 </div>
-            </ng-template> -->
+               
+            </ng-container>
+        
 
         </mat-card-content>
 

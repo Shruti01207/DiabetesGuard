@@ -14,6 +14,7 @@ import { BloodSugarTestComponent } from './patient-data/blood-sugar-test/blood-s
 import { DiabetesComplicationsComponent } from './patient-data/diabetes-complications/diabetes-complications.component';
 import { PastMedicationsComponent } from './patient-data/past-medications/past-medications.component';
 import { HeathMaintainanceComponent } from './patient-data/heath-maintainance/heath-maintainance.component';
+import { DiabetesManagementComponent } from './results/diabetes-management/diabetes-management.component';
 
 const routes: Routes = [
 
@@ -68,6 +69,14 @@ const routes: Routes = [
       {
         path: 'health-maintainance',
         component: HeathMaintainanceComponent
+      },
+      {
+        path:'risk-factors',
+        component: HeathMaintainanceComponent
+      },
+      {
+        path:'diabetes-management',
+        component: DiabetesManagementComponent
       }
     ]
   }

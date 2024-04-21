@@ -1,84 +1,178 @@
-<div class="container">
+<div class="container p-2">
     <h2>Add Medication Details</h2>
+    <div class="search-box mb-5">
+        <form class="example-form">
+            <div class="input-group">
+                <input class="form-control border-end-0 border rounded-pill" type="text"
+                    placeholder="Search the medicine by brand name, generic name or by the substance used"
+                    [formControl]="myControl" [matAutocomplete]="auto" id="example-search-input">
+                <span class="input-group-append">
 
-    <form class="example-form">
-        <div class="input-group">
-            <input class="form-control border-end-0 border rounded-pill"  type="text"
-                placeholder="Search the medicine by brand name, generic name or by the substance used"
-                [formControl]="myControl" [matAutocomplete]="auto" id="example-search-input">
-            <span class="input-group-append">
+                    <button class="btn btn-outline-secondary bg-white border border-bottom-0 rounded-pill ms-n5 px-1"
+                        type="button"
+                        [ngClass]="{ 'text-white': (isdataLoading==true), 'border-0 p-2 my-auto':(isdataLoading==true)  }">
+                        <span *ngIf="!isdataLoading" class="p-2" style="z-index: 200;">
+                            <i class="fa fa-search"></i>
+                        </span>
 
-                <button class="btn btn-outline-secondary bg-white border border-bottom-0 rounded-pill ms-n5 px-1"  type="button"
-                 [ngClass]="{ 'text-white': (isdataLoading==true), 'border-0 p-2 my-auto':(isdataLoading==true)  }">
-                    <span *ngIf="!isdataLoading" class="p-2" style="z-index: 200;">
-                        <i class="fa fa-search"></i>
-                    </span>
-                   
-                    <span *ngIf="isdataLoading">
-                        <div class="spinner-border spinner-border-sm spinner-margin" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                        <span *ngIf="isdataLoading">
+                            <div class="spinner-border spinner-border-sm spinner-margin" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </span>
+
+                    </button>
+
+                </span>
+            </div>
+            <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let option of data | async" [value]="option.brandNames[0]"
+                    (onSelectionChange)="selectMedicine(option,presType)">
+                    {{option.brandNames[0]}}
+                </mat-option>
+            </mat-autocomplete>
+        </form>
+    </div>
+    <mat-tab-group [@.disabled]="true" (selectedTabChange)="onTabChange($event)">
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <img src="../../../../assets/images/pill-icon.svg" class="me-2" alt="" style="height:30px;width:30px">
+                Add Medicine
+            </ng-template>
+
+            <div class="w-100 h-100">
+
+                <form class="p-3" [formGroup]="medPrescForm" (ngSubmit)="addMedicine('medicine')">
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="brandname" class="form-label">Brand Name</label>
+                            <input type="text" class="form-control" id="brandname" placeholder="Enter brandname..."
+                                formControlName="brandNames">
                         </div>
-                    </span>
+                        <div class="form-group col-6">
+                            <label class="form-label" for="substances">Substances</label>
+                            <input type="text" class="form-control" id="substances"
+                                placeholder="Enter substances in medicine..." formControlName="substances">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-3">
+                            <label>Dose</label>
+                            <input type="number" class="form-control" placeholder="Enter dose (in mg)..."
+                                formControlName="dose">
+                        </div>
+                        <div class="form-group col-6 mt-3">
+                            <label>Frequency</label>
+                            <select class="form-select" formControlName="frequency">
+                                <option value="0">Frequency</option>
+                                <option value="1">Once in a day</option>
+                                <option value="2">Twice in a day</option>
+                                <option value="3">Thrice in a day</option>
+                                <option value="4">More than 3 times</option>
+                            </select>
+                        </div>
 
-                </button>
 
-            </span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="form-group col-6">
+                            <label>Start Date</label>
+                            <input type="date" formControlName="startDate" class="form-control"
+                                placeholder="Enter brandname...">
+                        </div>
+                        <div class="form-group col-6">
+                            <label>End Date</label>
+                            <input type="date" formControlName="endDate" class="form-control"
+                                placeholder="Enter substances in medicine...">
+                        </div>
+                    </div>
 
+                    <div class="submit-btn ps-2 mt-3">
+                        <button class="btn btn-outline-success mt-2" type="submit">Submit</button>
+                    </div>
 
-        </div>
-        <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let option of data | async" [value]="option.brandNames[0]"
-                (onSelectionChange)="selectMedicine(option)">
-                {{option.brandNames[0]}}
-            </mat-option>
-        </mat-autocomplete>
-    </form>
-
-
-
-
-    <form class="mt-4" [formGroup]="pastPrescForm" (ngSubmit)="addMedicine( )">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="brandname" class="form-label">Brand Name</label>
-                <input type="text" class="form-control" id="brandname" placeholder="Enter brandname..."
-                    formControlName="brandNames">
+                </form>
             </div>
-            <div class="form-group col-6">
-                <label class="form-label" for="substances">Substances</label>
-                <input type="text" class="form-control" id="substances" placeholder="Enter substances in medicine..."
-                formControlName="substances">
-            </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-6 mt-3">
-                <label>Route</label>
-                <input type="text" class="form-control" placeholder="Enter route..."
-                formControlName="route">
-            </div>
-            <div class="form-group col-6 mt-3">
-                <label>Frequency</label>
-                <select class="form-select" formControlName="frequency">
-                    <option value="1">Once in a day</option>
-                    <option value="2" >Twice in a day</option>
-                    <option value="3" >Thrice in a day</option>
-                    <option value="4" >More than 3 times</option>
-                </select>
-            </div>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <img src="../../../../assets/images/insulin-icon.svg" class="me-2" alt=""
+                    style="height:30px;width:30px">
+                Add Insulin
+            </ng-template>
+            <div class="w-100 h-100">
 
-        </div>
-        <div class="row mt-3">
-            <div class="form-group col-6">
-                <label>Start Date</label>
-                <input type="date" formControlName="startDate" class="form-control" placeholder="Enter brandname...">
-            </div>
-            <div class="form-group col-6">
-                <label>End Date</label>
-                <input type="date"  formControlName="endDate" class="form-control" placeholder="Enter substances in medicine...">
-            </div>
-        </div>
+                <form class="p-3" [formGroup]="insulinPrescForm" (ngSubmit)="addMedicine('insulin')">
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="brandname" class="form-label">Brand Name</label>
+                            <input type="text" class="form-control" id="brandname" placeholder="Enter brandname..."
+                                formControlName="brandNames">
+                        </div>
+                        <div class="form-group col-6">
+                            <label class="form-label" for="substances">Substances</label>
+                            <input type="text" class="form-control" id="substances"
+                                placeholder="Enter substances in medicine..." formControlName="substances">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 mt-3">
+                            <label>Dose</label>
+                            <input type="text" class="form-control" placeholder="Enter dose (in mg)..."
+                                formControlName="dose">
+                        </div>
+                        <div class="form-group col-6 mt-3">
+                            <label>Frequency</label>
+                            <select class="form-select" formControlName="frequency">
+                                <option value="0">Frequency</option>
+                                <option value="1">Once in a day</option>
+                                <option value="2">Twice in a day</option>
+                                <option value="3">Thrice in a day</option>
+                                <option value="4">More than 3 times</option>
+                            </select>
+                        </div>
 
-        <button class="btn btn-success mt-2" type="submit">Submit</button>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="form-group col-6">
+                            <label>Start Date</label>
+                            <input type="date" formControlName="startDate" class="form-control"
+                                placeholder="Enter brandname...">
+                        </div>
+                        <div class="form-group col-6">
+                            <label>End Date</label>
+                            <input type="date" formControlName="endDate" class="form-control"
+                                placeholder="Enter substances in medicine...">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="form-group col-6">
+                            <select class="form-select" formControlName="insulinType">
+                                <option disabled value="0">Insulin Type</option>
+                                <option value="1">Rapid-acting insulin</option>
+                                <option value="2">Short-acting insulin</option>
+                                <option value="3">Intermediate-acting insulin</option>
+                                <option value="4">Mixed insulin</option>
+                                <option value="4">long-acting insulin</option>
+                            </select>
+                        </div>
 
-    </form>
+                    </div>
+                    <div class="submit-btn ps-2 mt-3">
+                        <button class="btn btn-outline-success mt-2" type="submit">Submit</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </mat-tab>
+
+    </mat-tab-group>
+
+
+
+
+
+
+
 </div>

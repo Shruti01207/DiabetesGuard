@@ -9,14 +9,12 @@ body {
    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
-
-/* default styles */
 * {
    list-style: none;
    box-sizing: border-box;
-   color: black;
+   
 }
+
 
 ul {
    padding: 0;
@@ -59,7 +57,7 @@ mat-drawer-content {
 
 mat-radio-button{
    margin-right: 2em;
-   
+  
 }
 
 .mat-mdc-dialog-surface,.mdc-dialog__surface{
@@ -112,3 +110,29 @@ mat-icon{
 
 }
 
+.question-container:hover{
+   background-color: #2e6ca1;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border:1px solid black;
+}
+.question-container:hover > .container-2 > .question {
+   color: white;
+ }
+
+ .question-container:hover > .question {
+   color: white;
+ } 
+ .question-container:hover > .container-2 > .options-container > mat-radio-group> mat-radio-button {
+
+   color: white !important;
+ }
+
+ .question-container:hover > .meaning > .meaning-question{
+
+   color:rgb(247, 157, 172) !important;
+ }
+
+ .question-container:hover > .meaning > .meaning-icon{
+
+   color:rgb(247, 157, 172) !important;
+ }

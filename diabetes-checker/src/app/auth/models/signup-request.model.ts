@@ -4,6 +4,6 @@ export interface SignupRequest {
     password: string;
     username:string;
     gender:string;
-    DateOfBirth: string;
+    dateOfBirth: string;
 
 }

@@ -10,7 +10,7 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 export class SidebarComponent implements OnInit {
 
   constructor(private commonService: CommonDataService,
-              private authService: AuthService
+    private authService: AuthService
   ) { }
 
   diaStatus: string = "yes";
@@ -19,27 +19,39 @@ export class SidebarComponent implements OnInit {
   menu1: any = [
     {
       title: "Introduction",
-      route: " "
+      route: "/main"
     },
     {
       title: "Diabetes Status",
-      route: " "
+      route: "/main/diabetes-status"
     },
     {
       title: "Current Symptoms",
-      route: ""
+      route: "/main/current-symptoms"
     },
     {
       title: "Blood Sugar Tests",
-      route: " ",
+      route: "/main/blood-test",
     },
     {
       title: "Diabetes Complications",
-      route: " "
+      route: "/main/diabetes-complications"
     }
     , {
       title: "Past Medications",
-      route: " "
+      route: "/main/past-medication"
+    },
+    {
+      title: "Health Management",
+      route: "/main/health-maintainance"
+    },
+    {
+      title: "Risk Factors",
+      route: "/main/risk-factors"
+    },
+    {
+      title: "Diabetes Management",
+      route:"/main/diabetes-management"
     }
 
   ]
@@ -59,12 +71,13 @@ export class SidebarComponent implements OnInit {
     this.commonService.getActiveGrpNum.subscribe({
       next: (res) => {
         this.activeGroupNum = res;
-        console.log("this.activeGroupNum=",
-          this.activeGroupNum);
 
       }
     })
-    this.userName = this.commonService.UserName as string;
+
+    this.userName="shruti_012"
+    // temporary comented
+    // this.userName = this.commonService.UserName as string;
 
   }
 
@@ -80,7 +93,7 @@ export class SidebarComponent implements OnInit {
 
 
   logOut() {
-  this.authService.logOut( );
+    this.authService.logOut();
   }
 
 }

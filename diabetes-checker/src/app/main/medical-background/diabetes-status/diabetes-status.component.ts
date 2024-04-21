@@ -18,13 +18,14 @@ export class DiabetesStatusComponent implements OnInit {
 
   diabetesStatus!: FormGroup;
   chatServiceSubcription!: Subscription;
-  loader: boolean=false;
+  loader: boolean = false;
+  id: number = 3;
 
   constructor(private fb: FormBuilder,
     private authService: AuthService,
     private chatService: ChatService,
     private botService: BotService,
-    private commonService:CommonDataService) {
+    private commonService: CommonDataService) {
 
 
   }
@@ -32,19 +33,39 @@ export class DiabetesStatusComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log("oninit called");
+
 
     this.diabetesStatus = this.fb.group(
       {
-        isDiabetic: ['yes', Validators.required],
-        diabetesType: ['not-sure', Validators.required]
+        isDiabetic: ['', Validators.required],
+        diabetesType: ['', Validators.required],
+        weight: [, Validators.required],
+        height: [, Validators.required]
+
       }
     );
+
+
+    this.getFormValue("diabetesStatus")
+
+
+
+
+
+    this.commonService.getValidationEvent(this.id - 1).subscribe({
+      next: (res) => {
+        this.Save();
+      }
+    })
+
+
+
+
+
     console.log("current patient", this.authService.patientId);
 
-    
-    // let res = this.chatService.startConversation();
-    // this.sendData();
+
+
 
 
   }
@@ -56,7 +77,7 @@ export class DiabetesStatusComponent implements OnInit {
       next: (res) => {
         console.log("res ds", res);
         if (res == true) {
-          this.loader=true;
+          this.loader = true;
           this.intializeBotVariables('diabetes status');
         }
       }
@@ -65,40 +86,53 @@ export class DiabetesStatusComponent implements OnInit {
 
   Save() {
     if (this.diabetesStatus.valid) {
-      console.log("this.diabetesStatus.value=", this.diabetesStatus.value);
+      this.setFormValue("diabetesStatus")
+      this.commonService.formValid = true;
     }
     else {
-      console.warn("Invalid form");
+      this.commonService.formValid = false;
     }
-
   }
 
   intializeBotVariables(topicName: string) {
     console.log("intializeBotVariables(topicName: string)");
     this.chatService.messageRequest.Message = topicName;
-    setTimeout(()=>{
+    setTimeout(() => {
       this.chatService.message();
       this.passValues();
-    },12000)
-  
+    }, 12000)
+
   }
 
   passValues() {
 
-    let val= new Array<string>(3);
-    val[0]="Shruti Gupta";
-    val[1]=this.diabetesStatus.get('isDiabetic')?.value;
-    val[2]=this.diabetesStatus.get('diabetesType')?.value;
+    let val = new Array<string>(3);
+    val[0] = "Shruti Gupta";
+    val[1] = this.diabetesStatus.get('isDiabetic')?.value;
+    val[2] = this.diabetesStatus.get('diabetesType')?.value;
     for (let i = 0; i < 3; i++) {
-        setTimeout(()=>{
-         this.chatService.messageRequest.Message=val[i];
-         this.chatService.message( );
-        },12000)
+      setTimeout(() => {
+        this.chatService.messageRequest.Message = val[i];
+        this.chatService.message();
+      }, 12000)
     }
   }
 
-  changeDiaStatus(){
+  changeDiaStatus() {
     this.commonService.setDiaStatus(this.diabetesStatus.get('isDiabetic')?.value);
+  }
+
+
+  getFormValue(key: string) {
+    const formValue = sessionStorage.getItem(key);
+    if (formValue) {
+      const obj = JSON.parse(formValue);
+      this.diabetesStatus.patchValue(obj);
+    }
+  }
+
+  setFormValue(key: string) {
+    sessionStorage.setItem(key, JSON.stringify((this.diabetesStatus.value as Object)));
   }
 
 }

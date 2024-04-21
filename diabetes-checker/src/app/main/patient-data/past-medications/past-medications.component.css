@@ -8,3 +8,7 @@
        background: #4eb5ff2e;
       
 }
+
+.medicine-container{
+  overflow-y: scroll;
+}

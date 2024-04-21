@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { BotService } from '../shared/services/bot.service';
 import { CompData } from './medical-background/models/comp-data';
 import { CommonDataService } from './services/common-data.service';
 import { ToastrService } from 'ngx-toastr';
+import { DiabetesStatusComponent } from './medical-background/diabetes-status/diabetes-status.component';
 
 @Component({
   selector: 'app-main',
@@ -12,58 +13,74 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class MainComponent implements OnInit {
 
+
+
   constructor(private router: Router,
     private botService: BotService,
     private commonDataService: CommonDataService,
     private toastrService: ToastrService) {
 
-    this.router.navigate(["/main"]);
+    this.router.navigateByUrl("/main");
 
   }
-    conditionsAccepted:boolean = false;
+  conditionsAccepted: boolean = false;
 
   ngOnInit(): void {
-    //console.log("oninit main called");
-    this.commonDataService.getisTermsConditionAccepted.subscribe({
-      next: (val) => {
-        this.conditionsAccepted = val;
-         console.log("conditionsAccepted=", this.conditionsAccepted);
-      }
-    });
+    // const currIndex = sessionStorage.getItem("currIndex");
+    // this.currIndex = Number(currIndex);
   }
 
   routeSeq1: Array<CompData> = [
     {
+      id: 1,
       route: '/main',
       menuGroup: 0
     },
     {
+      id: 2,
       route: '/main/terms-conditions',
       menuGroup: 0
     },
     {
+      id: 3,
       route: '/main/diabetes-status/',
       menuGroup: 1
     },
     {
+      id: 4,
       route: '/main/current-symptoms',
       menuGroup: 2
     },
     {
+      id: 5,
       route: '/main/blood-test',
       menuGroup: 3
     },
     {
+      id: 6,
       route: '/main/diabetes-complications',
       menuGroup: 4
     },
     {
+      id: 7,
       route: '/main/past-medication',
       menuGroup: 5
     }
     , {
+      id: 8,
       route: '/main/health-maintainance',
       menuGroup: 6
+    },
+    {
+      id: 9,
+      route: '/main/risk-factors',
+      menuGroup: 7
+    },
+    {
+      id:10,
+      route:'/main/diabetes-management',
+      menuGroup: 8
+    
     }
   ]
 
@@ -83,6 +100,8 @@ export class MainComponent implements OnInit {
     }
     else {
       this.currIndex = (this.currIndex - 1) % len;
+      this.commonDataService.formValid = false;
+      sessionStorage.setItem("currIndex", this.currIndex.toString());
     }
 
     this.router.navigate([this.routeSeq1[this.currIndex].route]);
@@ -90,23 +109,25 @@ export class MainComponent implements OnInit {
   }
 
   next() {
-  
-   
-    if (this.currIndex == 1) {
-    
-      if (this.conditionsAccepted == false) {
-        this.toastrService.warning("Please accept terms and conditions before moving forward");
-        return;
-      }
 
+    this.commonDataService.checkComponent(this.currIndex);
+
+    if (this.commonDataService.formValid || this.routeSeq1[this.currIndex].id == 1) {
+      
+      const len = this.routeSeq1.length;
+      this.currIndex = (this.currIndex + 1) % len;
+      sessionStorage.setItem("currIndex", this.currIndex.toString());
+      this.router.navigate([this.routeSeq1[this.currIndex].route]);
+      this.commonDataService.setActiveGrpNum(this.routeSeq1[this.currIndex].menuGroup)
+      this.commonDataService.formValid = false;
 
     }
+    else {
+      this.toastrService.error("Please fill all the required fields!");
+    }
+  
 
-    const len = this.routeSeq1.length;
-    this.currIndex = (this.currIndex + 1) % len;
-    console.log("this.currIndex=", this.currIndex);
-    this.router.navigate([this.routeSeq1[this.currIndex].route]);
-    this.commonDataService.setActiveGrpNum(this.routeSeq1[this.currIndex].menuGroup)
+
   }
 
 

@@ -19,6 +19,12 @@ export class MedicationService {
   getSuggestions(searchTerm: string, field: string): Observable<any> {
     if (searchTerm.length >= 2) {
       const url = `https://api.fda.gov/drug/label.json?search=${field}:${searchTerm}&limit=20`;
+      this.http.get<any>(url).subscribe({
+        next:(res)=>{
+          console.log("api res=",res);
+          
+        }
+      })
       return this.http.get<any>(url)
         .pipe(
           map(data => data.results.map((med: { openfda: any }) => {
@@ -45,32 +51,34 @@ export class MedicationService {
   }
 
   addMedicine(prescription: medicineData) {
-   
-     const body={
-      patientId:this.authService.patientId,
-      brandName:prescription.brandNames.join( ),
-      substances:prescription.substances.join( ),
-      startDate:prescription.startDate,
+
+    const body = {
+      patientId: localStorage.getItem("patientId"),
+      brandName: prescription.brandNames.join(),
+      substances: prescription.substances.join(),
+      startDate: prescription.startDate,
       endDate: prescription.endDate,
-      frequency:Number(prescription.frequency),
-      route:prescription.route.join( )
-     }
-     console.log(body);
-     
+      frequency: Number(prescription.frequency),
+      route: prescription.route.join()
+    }
+    console.log(body);
 
-    return this.http.post('https://localhost:7169/api/PastMedications',body);
+
+    return this.http.post('https://localhost:7169/api/PastMedications', body);
   }
 
-  getMedicinesByPatientId(patientId:string ){
-    return this.http.get('https://localhost:7169/api/PastMedications/'+'2c2c78a4-88d8-4ef7-a0c7-8b86bb04294f'+'/patientId');
+  getMedicinesByPatientId(patientId: string) {
+    return this.http.get('https://localhost:7169/api/PastMedications/' + localStorage.getItem("patientId") + '/patientId');
+  }
+
+  deleteById(medicineId: string) {
+    return this.http.delete('https://localhost:7169/api/PastMedications/'+medicineId);
   }
 
 
 
 
-
-
-  // getSuggestions(searchTerm: string, field: string): Observable<string[]> {
+  // getSuggestions(searchTerm: string, field: string): Observable<string[]> {E
   //   if (searchTerm.length >= 2) {
   //     const url = `https://api.fda.gov/drug/label.json?search=${field}:${searchTerm}&limit=10`;
   //     return this.http.get<any>(url)

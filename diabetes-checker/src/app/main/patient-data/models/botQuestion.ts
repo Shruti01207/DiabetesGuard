@@ -3,5 +3,6 @@ export interface BotQuestion {
     type: string;
     inputType:string;
     placeholder:string;
+    formControlName: string
     options:string[]
 }

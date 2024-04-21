@@ -13,27 +13,42 @@
 
         </mat-card-header>
 
-        <mat-card-content>
+        <mat-card-content class="w-100  medicine-container" style="height:85%">
 
-            <div class="row">
-                <ng-container *ngFor="let prescription of pastMedications">
-                    <div class="medicine-card shadow p-3 rounded  m-2 col-5">
-                        <h2 class="fw-bold mb-1">{{prescription.brandName}}</h2>
-                        <p><span class="medicine-card-title me-1">SUBTANCES:</span>{{prescription.substances}}</p>
-                        <div class="d-flex justify-content-between">
-                            <p><span class="medicine-card-title me-1">ROUTE:</span>{{prescription.route}}</p>
-                            <p><span class="medicine-card-title">FREQUENCY:</span>{{prescription.frequency}}</p>
+            <div class="h-100 w-100">
+                <div class="row container">
+                    <ng-container *ngFor="let prescription of pastMedications">
+                        <div class="medicine-card shadow p-3 rounded  m-3 col-5">
+                            <div class="d-flex justify-content-between">
+                                <h2 class="fw-bold mb-1">{{prescription.brandName}}</h2>
+                                <i class="fa fa-trash" aria-hidden="true" style="color:red; font-size:1.5rem"
+                                    (click)="deleteComplication(prescription.id)"></i>
+                            </div>
+
+                            <p><span
+                                    class="medicine-card-title me-1">SUBTANCES:</span>{{prescription.substances.toString()|
+                                wordTranform}}</p>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="medicine-card-title me-1">ROUTE:</span>{{prescription.route.toString()|
+                                    wordTranform}}</p>
+                                <p><span
+                                        class="medicine-card-title">FREQUENCY:</span>{{prescription.frequency.toString()|
+                                    wordTranform}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p><span class="medicine-card-title me-1">Start Date:</span>{{prescription.startDate |
+                                    date
+                                    }}</p>
+                                <p><span class="medicine-card-title me-1">End Date:</span>{{prescription.endDate | date
+                                    }}
+                                </p>
+                            </div>
+
+
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <p><span class="medicine-card-title me-1">Start Date:</span>{{prescription.startDate | date
-                                }}</p>
-                            <p><span class="medicine-card-title me-1">End Date:</span>{{prescription.endDate | date }}
-                            </p>
-                        </div>
+                    </ng-container>
+                </div>
 
-
-                    </div>
-                </ng-container>
 
             </div>
 
